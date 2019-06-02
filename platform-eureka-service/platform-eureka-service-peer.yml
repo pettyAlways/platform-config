@@ -1,0 +1,19 @@
+server:
+  port: 8085
+  servlet:
+      context-path: /eureka
+
+eureka:
+  instance:
+    hostname: eureka-service
+  client:
+    registerWithEureka: false #不需要注册到注册中心
+    fetchRegistry: false #不需要从注册中心拉取服务
+    serviceUrl:
+      defaultZone: http://eureka:8084/eureka/
+
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
