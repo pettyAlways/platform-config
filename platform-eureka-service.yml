@@ -1,8 +1,5 @@
 server:
   port: 8084
-  servlet:
-      context-path: /eureka
-
 eureka:
   instance:
     hostname: eureka
@@ -13,7 +10,9 @@ eureka:
       defaultZone: http://eureka01:8085/eureka/
 
 spring:
+  application:
+    name: platform-eureka-service
   security:
     user:
-      name: admin
-      password: admin
+      name: yingzuidou
+      password: yingzuidou
