@@ -7,12 +7,12 @@ eureka:
     registerWithEureka: false #不需要注册到注册中心
     fetchRegistry: false #不需要从注册中心拉取服务
     serviceUrl:
-      defaultZone: http://eureka:8084/eureka/
+      defaultZone: http://eureka:8084
 
 spring:
   application:
       name: platform-eureka-service
   security:
     user:
-      name: admin
-      password: admin
+      name: yingzuidou
+      password: yingzuidou
