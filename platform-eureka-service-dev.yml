@@ -1,0 +1,19 @@
+server:
+  port: 8084
+eureka:
+  instance:
+    hostname: localhost
+    ip-address: localhost
+  client:
+    registerWithEureka: false #不需要注册到注册中心
+    fetchRegistry: false #不需要从注册中心拉取服务
+    serviceUrl:
+      defaultZone: http://47.100.44.21:8085
+
+spring:
+  application:
+    name: platform-eureka-service
+  security:
+    user:
+      name: yingzuidou
+      password: yingzuidou
