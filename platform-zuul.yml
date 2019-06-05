@@ -7,7 +7,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://yingzuidou:yingzuidou@47.100.44.21:8084/eureka/, http://yingzuidou:yingzuidou@47.100.44.21:8085/eureka/
-
+  instance:
+    instance-id: platform-zuul
+    prefer-ip-address: true
+    hostname: localhost
+    ip-address: localhost
 zuul:
   prefix: /platform # 增加request访问前缀
   ignoredServices: '*' # 忽略request的指定服务名，例如eureka的服务名不能访问，ignoredServices: 'PRODUCE',如果所有eureka服务名忽略，那么用*就可以完成，只有下面指定的才能访问
