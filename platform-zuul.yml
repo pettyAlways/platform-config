@@ -14,11 +14,11 @@ eureka:
     ip-address: localhost
 zuul:
   prefix: /platform # 增加request访问前缀 默认会过滤掉prefix, 可以通过zuul.stripPrefix=false设置不过滤
-  stripPrefix: false #不过滤前缀
+  #stripPrefix: false #不过滤前缀
   ignoredServices: '*' # 忽略request的指定服务名，例如eureka的服务名不能访问，ignoredServices: 'PRODUCE',如果所有eureka服务名忽略，那么用*就可以完成，只有下面指定的才能访问
   routes: # 如果不加下面的映射，那么在前端只能访问eureka中的服务名，这样会暴露eureka中的服务名信息
     knowledge:
-      path: /platform/konwledge/**
+      path: /test/**
       serviceId: platform-knowledge
      #platform-knowledge: /test/** # eureka的produce路由请求url key为注册在eureka的服务id, 默认过滤掉/produce 将/**匹配的路径转发给服务，默认可以stripPrefix: false设置不过滤
-      #stripPrefix: false
+      stripPrefix: false
