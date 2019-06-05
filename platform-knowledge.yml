@@ -1,6 +1,8 @@
 server:
   port: 8090
-
+spring:
+  application:
+    name: platform-knowledge
 eureka:
   client:
     serviceUrl:
