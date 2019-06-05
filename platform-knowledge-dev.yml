@@ -1,0 +1,17 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: platform-knowledge
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://yingzuidou:yingzuidou@localhost:8084/eureka/, http://yingzuidou:yingzuidou@localhost:8085/eureka/
+  instance:
+    instance-id: platform-knowledge
+    prefer-ip-address: true
+    hostname: localhost
+    ip-address: localhost
+
+info:
+  app.name: 'platform-knowledge'
