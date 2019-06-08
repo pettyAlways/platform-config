@@ -13,7 +13,7 @@ eureka:
     hostname: localhost
     ip-address: localhost
 zuul:
-  prefix: /platform #
+  prefix: /platform
   ignoredServices: '*'
   routes:
-      platform-knowledge: /knowledge/**
+    platform-knowledge: /knowledge/**
