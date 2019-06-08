@@ -31,3 +31,7 @@ eureka:
     prefer-ip-address: true
     hostname: localhost
     ip-address: localhost
+
+skip:
+  login:
+    url: /login/login.do
