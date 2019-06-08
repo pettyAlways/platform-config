@@ -1,0 +1,32 @@
+server:
+  port: 9091
+  servlet:
+    context-path: /cms-web
+spring:
+  datasource:
+    url: jdbc:mysql://118.25.74.179/my_cms
+    username: root
+    password: ShangGuanls@123
+    hikari:
+      maximum-pool-size: 15
+      minimum-idle: 5
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  jpa:
+    show-sql: true
+logging:
+  path: /usr/developer/backend/cms_web_log
+  level: INFO
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://yingzuidou:yingzuidou@47.100.44.21:8084/eureka/, http://yingzuidou:yingzuidou@47.100.44.21:8085/eureka/
+  instance:
+    instance-id: platform-developer
+    prefer-ip-address: true
+    hostname: localhost
+    ip-address: localhost
