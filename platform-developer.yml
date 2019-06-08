@@ -19,7 +19,8 @@ spring:
     show-sql: true
 logging:
   path: /usr/developer/backend/cms_web_log
-  level: INFO
+  level:
+    root: INFO
 
 eureka:
   client:
