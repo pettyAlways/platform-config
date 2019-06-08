@@ -6,7 +6,7 @@ spring:
   application:
     name: platform-developer
   datasource:
-    url: jdbc:mysql://118.25.74.179:3306/my_cms
+    url: jdbc:mysql://118.25.74.179:3306/my_cms?useSSL=false
     username: root
     password: sgls652709
     hikari:
