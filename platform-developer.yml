@@ -3,8 +3,10 @@ server:
   servlet:
     context-path: /cms-web
 spring:
+  application:
+    name: platform-developer
   datasource:
-    url: jdbc:mysql://118.25.74.179/my_cms
+    url: jdbc:mysql://118.25.74.179:3306/my_cms
     username: root
     password: sgls652709
     hikari:
