@@ -19,6 +19,10 @@ zuul:
     platform-knowledge: /knowledge/**
 
 jwt:
+  token-header: 'Authorization'
+  token-header-prefix: 'Bearer-'
+  access_token: 3600
+  refresh_token: 3600
   issuer: 'platform_blog'
   subject: 'security_verify'
   secret: 'SHXIDEO#DK@jdj!8_88'
