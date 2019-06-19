@@ -17,3 +17,8 @@ zuul:
   ignoredServices: '*'
   routes:
     platform-knowledge: /knowledge/**
+
+jwt:
+  issuer: 'platform_blog'
+  subject: 'security_verify'
+  secret: 'SHXIDEO#DK@jdj!8_88'
