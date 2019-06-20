@@ -21,8 +21,10 @@ zuul:
 jwt:
   token-header: 'Authorization'
   token-header-prefix: 'Bearer-'
-  access_token: 3600
-  refresh_token: 3600
+  # 单位为小时
+  expire_token: 1
+  # 单位为分
+  refresh_token: 5
   issuer: 'platform_blog'
   subject: 'security_verify'
   secret: 'SHXIDEO#DK@jdj!8_88'
