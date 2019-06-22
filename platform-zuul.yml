@@ -17,7 +17,12 @@ zuul:
   ignoredServices: '*'
   routes:
     platform-knowledge: /knowledge/**
+feign:
+  hystrix:
+    enabled: true
 
+auth:
+  serviceId: platform-developer
 jwt:
   token-header: 'Authorization'
   token-header-prefix: 'Bearer-'
