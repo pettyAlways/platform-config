@@ -16,9 +16,11 @@ zuul:
   prefix: /platform
   ignoredServices: '*'
   routes:
-    platform-knowledge: /knowledge/**
-    platform-blog: /blog/**
-    stripPrefix: false
+    blogService:
+      path: /blog/**
+      serviceId: platform-blog
+      stripPrefix: false
+
 feign:
   hystrix:
     enabled: true
