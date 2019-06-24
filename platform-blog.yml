@@ -19,6 +19,15 @@ spring:
       connection-test-query: SELECT 1
   jpa:
     show-sql: true
+
+auth:
+  serviceId: platform-blog
+  token-header: x-client-token
+  token-value: zuul-client-token
+jwt:
+  token-header: 'Authorization'
+  token-header-prefix: 'Bearer-'
+
 logging:
   path: /usr/developer/backend/my_log
   level:
