@@ -17,6 +17,8 @@ zuul:
   ignoredServices: '*'
   routes:
     platform-knowledge: /knowledge/**
+    platform-blog: /blog/**
+    stripPrefix: false
 feign:
   hystrix:
     enabled: true
@@ -25,6 +27,7 @@ auth:
   serviceId: platform-blog
   token-header: x-client-token
   token-value: zuul-client-token
+
 jwt:
   token-header: 'Authorization'
   token-header-prefix: 'Bearer-'
