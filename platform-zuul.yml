@@ -14,9 +14,12 @@ eureka:
     ip-address: localhost
 zuul:
   prefix: /platform
-  # ignoredServices: '*'
+  ignoredServices: '*'
   routes:
-    platform-knowledge: /knowledge/**
+    blogService:
+      path: /blog/**
+      serviceId: platform-blog
+      stripPrefix: false
 
 feign:
   hystrix:
