@@ -14,12 +14,22 @@ eureka:
     ip-address: localhost
 zuul:
   prefix: /platform
-  ignoredServices: '*'
+  # ignoredServices: '*'
   routes:
     platform-knowledge: /knowledge/**
+
 feign:
   hystrix:
-    enabled: true
+    enabled: false
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          strategy: SEMAPHORE
 
 auth:
   serviceId: platform-blog
