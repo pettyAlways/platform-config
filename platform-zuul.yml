@@ -13,6 +13,8 @@ eureka:
     hostname: localhost
     ip-address: localhost
 zuul:
+  # zuul转发请求会过滤默认的请求头，例如Authorization,这里使用sensitive-headers清空默认请求头
+  sensitive-headers:
   prefix: /platform
   ignoredServices: '*'
   routes:
