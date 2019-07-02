@@ -22,6 +22,12 @@ zuul:
       stripPrefix: false
 
 feign:
+  client:
+    config:
+      default:
+        connectTimeout: 3000
+        # 请求 超时时间
+        readTimeout: 3000
   hystrix:
     enabled: true
 
@@ -30,10 +36,13 @@ hystrix:
     default:
       execution:
         timeout:
-          #是否开启超时熔断, 如果为false, 则熔断机制只在服务不可用时开启
+          # 是否开启超时熔断, 如果为false, 则熔断机制只在服务不可用时开启
           enabled: false
         isolation:
           strategy: SEMAPHORE
+          # 配置hystrix熔断超时，它适用策略THREAD和SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 5000
 
 auth:
   serviceId: platform-blog
