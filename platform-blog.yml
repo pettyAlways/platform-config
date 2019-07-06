@@ -21,7 +21,7 @@ spring:
   jpa:
     show-sql: true
   resources:
-    static-locations: classpath:/resources/, classpath:/static/, file:D://cover-upload
+    static-locations: classpath:/, classpath:/static/, file:D://cover-upload
   mvc:
     static-path-pattern: '/static/**'
 
