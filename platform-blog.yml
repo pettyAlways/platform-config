@@ -28,6 +28,10 @@ jwt:
   token-header: 'Authorization'
   token-header-prefix: 'Bearer-'
 
+static:
+  resource:
+    uploadPath: 'D:\\cover-upload'
+
 logging:
   path: /usr/developer/backend/my_log
   level:
