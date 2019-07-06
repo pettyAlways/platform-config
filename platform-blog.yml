@@ -2,6 +2,7 @@ server:
   port: 9092
   servlet:
     context-path: /blog
+
 spring:
   application:
     name: platform-blog
@@ -19,6 +20,10 @@ spring:
       connection-test-query: SELECT 1
   jpa:
     show-sql: true
+  resources:
+    static-locations: classpath:/resources/, classpath:/static/, file:D://cover-upload
+  mvc:
+    static-path-pattern: '/static/**'
 
 auth:
   serviceId: platform-blog
