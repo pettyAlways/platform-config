@@ -30,7 +30,7 @@ jwt:
 
 static:
   resource:
-    uploadPath: 'D:\\cover-upload'
+    uploadPath: 'D:/cover-upload'
 
 logging:
   path: /usr/developer/backend/my_log
