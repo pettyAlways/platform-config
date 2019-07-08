@@ -36,6 +36,10 @@ feign:
   hystrix:
     enabled: false
 
+ribbon:
+  ConnectTimeout: 5000
+  ReadTimeout: 5000
+
 hystrix:
   command:
     default:
