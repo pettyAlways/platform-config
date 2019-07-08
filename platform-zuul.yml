@@ -34,7 +34,7 @@ feign:
         # 请求 超时时间
         readTimeout: 60000
   hystrix:
-    enabled: true
+    enabled: false
 
 hystrix:
   command:
