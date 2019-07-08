@@ -23,8 +23,8 @@ zuul:
       serviceId: platform-blog
       stripPrefix: false
   host:
-    connect-timeout-millis: 60000
-    socket-timeout-millis: 200000
+    connect-timeout-millis: 10000
+    socket-timeout-millis: 60000
 
 feign:
   client:
@@ -32,7 +32,7 @@ feign:
       default:
         connectTimeout: 3000
         # 请求 超时时间
-        readTimeout: 3000
+        readTimeout: 60000
   hystrix:
     enabled: true
 
@@ -47,7 +47,7 @@ hystrix:
           strategy: SEMAPHORE
           # 配置hystrix熔断超时，它适用策略THREAD和SEMAPHORE
           thread:
-            timeoutInMilliseconds: 5000
+            timeoutInMilliseconds: 60000
 
 auth:
   serviceId: platform-blog
