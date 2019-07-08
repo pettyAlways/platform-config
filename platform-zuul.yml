@@ -22,7 +22,10 @@ zuul:
       path: /blog/**
       serviceId: platform-blog
       stripPrefix: false
-
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+    
 feign:
   client:
     config:
