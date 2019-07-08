@@ -24,8 +24,8 @@ zuul:
       stripPrefix: false
   host:
     connect-timeout-millis: 60000
-    socket-timeout-millis: 60000
-    
+    socket-timeout-millis: 200000
+
 feign:
   client:
     config:
