@@ -2,8 +2,12 @@ server:
   port: 9092
   servlet:
     context-path: /blog
-
 spring:
+  jackson:
+    date-format:
+      yyyy-MM-dd
+    time-zone:
+      GMT+8
   application:
     name: platform-blog
   datasource:
@@ -21,6 +25,9 @@ spring:
   jpa:
     show-sql: true
   resources:
+    # 参考https://www.cnblogs.com/pomer-huang/archive/2018/09/12/pomer.html
+    # 在SpringBoot中的classpath指的是resources以及java等根目录 classpath:/resources 这种写法特别让人困惑
+    # 他指的是resources目录下的resources
     static-locations: classpath:/, classpath:/static/, file:D://cover-upload
   mvc:
     static-path-pattern: '/static/**'
