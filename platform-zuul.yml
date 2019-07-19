@@ -22,12 +22,20 @@ zuul:
       path: /blog/**
       serviceId: platform-blog
       stripPrefix: false
+    blogFrontendService:
+      path: /frontend/**
+      serviceId: platform-frontend-site
+      stripPrefix: false
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000
 
 # 单独给platform-blog配置超时，需要配置ribbon超时，否则出现问题:https://segmentfault.com/q/1010000019700014
 platform-blog:
+  ribbon:
+    ConnectTimeout: 60000
+    ReadTimeout: 60000
+platform-frontend-site:
   ribbon:
     ConnectTimeout: 60000
     ReadTimeout: 60000
