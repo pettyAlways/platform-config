@@ -9,7 +9,7 @@ spring:
     time-zone:
       GMT+8
   application:
-    name: platform-fronted-site
+    name: platform-frontend-site
   datasource:
     url: jdbc:mysql://118.25.74.179:3306/cms_web?useSSL=false
     username: root
