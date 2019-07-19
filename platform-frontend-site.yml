@@ -1,0 +1,61 @@
+server:
+  port: 9093
+  servlet:
+    context-path: /frontend
+spring:
+  jackson:
+    date-format:
+      yyyy-MM-dd
+    time-zone:
+      GMT+8
+  application:
+    name: platform-fronted-site
+  datasource:
+    url: jdbc:mysql://118.25.74.179:3306/cms_web?useSSL=false
+    username: root
+    password: 123456
+    hikari:
+      maximum-pool-size: 15
+      minimum-idle: 5
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  jpa:
+    show-sql: true
+  resources:
+    # 参考https://www.cnblogs.com/pomer-huang/archive/2018/09/12/pomer.html
+    # 在SpringBoot中的classpath指的是resources以及java等根目录 classpath:/resources 这种写法特别让人困惑
+    # 他指的是resources目录下的resources
+    static-locations: classpath:/, classpath:/static/, file:D://cover-upload
+  mvc:
+    static-path-pattern: '/static/**'
+
+auth:
+  serviceId: platform-frontend-site
+  token-header: x-client-token
+  token-value: zuul-client-token
+jwt:
+  token-header: 'Authorization'
+  token-header-prefix: 'Bearer-'
+
+static:
+  resource:
+    uploadPath: 'D:/cover-upload'
+
+logging:
+  path: /usr/developer/backend/my_log
+  level:
+    root: INFO
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://yingzuidou:yingzuidou@47.100.44.21:8084/eureka/, http://yingzuidou:yingzuidou@47.100.44.21:8085/eureka/
+  instance:
+    instance-id: platform-frontend-site
+    prefer-ip-address: true
+    hostname: localhost
+    ip-address: localhost
+
