@@ -71,7 +71,7 @@ jwt:
   token-header: 'Authorization'
   token-header-prefix: 'Bearer-'
   # 单位为小时
-  expire_token: 1
+  expire_token: 600
   # 单位为分
   refresh_token: 5
   issuer: 'platform_blog'
