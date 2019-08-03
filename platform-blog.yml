@@ -28,7 +28,7 @@ spring:
     # 参考https://www.cnblogs.com/pomer-huang/archive/2018/09/12/pomer.html
     # 在SpringBoot中的classpath指的是resources以及java等根目录 classpath:/resources 这种写法特别让人困惑
     # 他指的是resources目录下的resources
-    static-locations: classpath:/, classpath:/static/, file:D://cover-upload
+    static-locations: classpath:/, classpath:/static/, file:/home/platform/platform-blog/resources
   mvc:
     static-path-pattern: '/static/**'
 
@@ -42,7 +42,7 @@ jwt:
 
 static:
   resource:
-    uploadPath: 'D:/cover-upload'
+    uploadPath: '/home/platform/platform-blog/resources'
     accessUrl: 'http://192.168.0.100:8086/platform/blog/static/'
 
 logging:

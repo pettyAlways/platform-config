@@ -28,7 +28,7 @@ spring:
     # 参考https://www.cnblogs.com/pomer-huang/archive/2018/09/12/pomer.html
     # 在SpringBoot中的classpath指的是resources以及java等根目录 classpath:/resources 这种写法特别让人困惑
     # 他指的是resources目录下的resources
-    static-locations: classpath:/, classpath:/static/, file:D://cover-upload, file:/home
+    static-locations: classpath:/, classpath:/static/, file:D://cover-upload, file:/home/platform/platform-frontend/resources
   mvc:
     static-path-pattern: '/static/**'
 
@@ -49,13 +49,13 @@ jwt:
 
 static:
   resource:
-    uploadPath: 'D:/cover-upload'
-    accessUrl: 'http://192.168.0.100:8086/platform/blog/static/'
+    uploadPath: '/home/platform/platform-frontend/resources'
+    accessUrl: 'http://118.25.74.179:8086/platform/frontend/static/'
 
 logging:
-  path: /usr/developer/backend/my_log
+  path: /home/platform/platform-zuul/my_log
   level:
-    root: INFO
+    root: ERROR
 
 eureka:
   client:
@@ -64,6 +64,6 @@ eureka:
   instance:
     instance-id: platform-frontend-site
     prefer-ip-address: true
-    hostname: localhost
-    ip-address: localhost
+    hostname: 118.25.74.179
+    ip-address: 118.25.74.179
 
