@@ -43,6 +43,7 @@ jwt:
 static:
   resource:
     uploadPath: 'D:/cover-upload'
+    accessUrl: 'http://192.168.0.100:8086/platform/blog/static/'
 
 logging:
   path: /usr/developer/backend/my_log
