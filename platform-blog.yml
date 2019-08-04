@@ -57,6 +57,6 @@ eureka:
   instance:
     instance-id: platform-blog
     prefer-ip-address: true
-    hostname: 47.98.215.5
-    ip-address: 47.98.215.5
+    hostname: localhost
+    ip-address: localhost
 
