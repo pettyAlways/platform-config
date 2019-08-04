@@ -67,8 +67,8 @@ eureka:
   instance:
     instance-id: platform-frontend-site
     prefer-ip-address: true
-    hostname: localhost
-    ip-address: localhost
+    hostname: 47.98.215.5
+    ip-address: 47.98.215.5
 
 info:
   app.name: 'platform-frontend'
