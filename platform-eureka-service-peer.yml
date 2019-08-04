@@ -8,7 +8,7 @@ eureka:
     registerWithEureka: false #不需要注册到注册中心
     fetchRegistry: false #不需要从注册中心拉取服务
     serviceUrl:
-      defaultZone: http://118.25.74.179:8084
+      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8084
 
 spring:
   application:
