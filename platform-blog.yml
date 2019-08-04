@@ -53,10 +53,13 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://yingzuidou:yingzuidou@47.100.44.21:8084/eureka/, http://yingzuidou:yingzuidou@47.100.44.21:8085/eureka/
+      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8084/eureka/, http://yingzuidou:yingzuidou@118.25.74.179:8085/eureka/
   instance:
     instance-id: platform-blog
     prefer-ip-address: true
-    hostname: localhost
-    ip-address: localhost
+    hostname: 47.98.215.5
+    ip-address: 47.98.215.5
 
+info:
+  app.name: 'platform-blog'
+  app.descr: '博客工作台'
