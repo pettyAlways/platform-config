@@ -58,7 +58,7 @@ github:
 logging:
   path: /home/platform/platform-zuul/my_log
   level:
-    root: ERROR
+    root: INFO
 
 eureka:
   client:
