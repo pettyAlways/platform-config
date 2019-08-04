@@ -5,7 +5,7 @@ spring:
       password: yingzuidou
 server:
   port: 8084
-# eureka集群信息
+# eureka集群信息 不能添加instance这种额外信息把，有时候多加了一些信息会导致eureka不是集群
 eureka:
   client:
     registerWithEureka: false
