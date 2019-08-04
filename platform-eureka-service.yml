@@ -2,13 +2,13 @@ server:
   port: 8084
 eureka:
   instance:
-    hostname: 47.100.44.21
-    ip-address: 47.100.44.21
+    hostname: 118.25.74.179
+    ip-address: 118.25.74.179
   client:
     registerWithEureka: false #不需要注册到注册中心
     fetchRegistry: false #不需要从注册中心拉取服务
     serviceUrl:
-      defaultZone: http://47.100.44.21:8085
+      defaultZone: http://118.25.74.179:8085
 
 spring:
   application:
