@@ -1,19 +1,14 @@
-server:
-  port: 8084
-eureka:
-  instance:
-    hostname: 118.25.74.179
-    ip-address: 118.25.74.179
-  client:
-    registerWithEureka: false #不需要注册到注册中心
-    fetchRegistry: false #不需要从注册中心拉取服务
-    serviceUrl:
-      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8085
-
 spring:
-  application:
-    name: platform-eureka-service
   security:
     user:
       name: yingzuidou
       password: yingzuidou
+server:
+  port: 8084
+# eureka集群信息
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8085
