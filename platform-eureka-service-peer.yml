@@ -12,7 +12,7 @@ eureka:
 
 spring:
   application:
-      name: platform-eureka-service
+    name: platform-eureka-service-peer
   security:
     user:
       name: yingzuidou
