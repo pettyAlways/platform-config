@@ -24,15 +24,15 @@ logging:
   level:
     root: INFO
 
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://yingzuidou:yingzuidou@47.100.44.21:8084/eureka/, http://yingzuidou:yingzuidou@47.100.44.21:8085/eureka/
-#  instance:
-#    instance-id: platform-developer
-#    prefer-ip-address: true
-#    hostname: localhost
-#    ip-address: localhost
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://yingzuidou:yingzuidou@47.100.44.21:8084/eureka/, http://yingzuidou:yingzuidou@47.100.44.21:8085/eureka/
+  instance:
+    instance-id: platform-developer
+    prefer-ip-address: true
+    hostname: 118.25.74.179
+    ip-address: 118.25.74.179
 
 skip:
   login:

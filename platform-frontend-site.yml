@@ -67,6 +67,6 @@ eureka:
   instance:
     instance-id: platform-frontend-site
     prefer-ip-address: true
-    hostname: 118.25.74.179
-    ip-address: 118.25.74.179
+    hostname: 47.98.215.5
+    ip-address: 47.98.215.5
 
