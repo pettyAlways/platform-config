@@ -10,8 +10,8 @@ eureka:
   instance:
     instance-id: platform-zuul
     prefer-ip-address: true
-    hostname: 118.25.74.179
-    ip-address: 118.25.74.179
+    hostname: localhost
+    ip-address: localhost
 zuul:
   # zuul转发请求会过滤默认的请求头，例如Authorization,这里使用sensitive-headers清空默认请求头
   sensitive-headers:
