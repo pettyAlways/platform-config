@@ -50,7 +50,7 @@ jwt:
 static:
   resource:
     uploadPath: '/home/platform/platform-frontend/resources'
-    accessUrl: 'http://118.25.74.179:8086/platform/frontend/static/'
+    accessUrl: 'http://47.98.215.5:8086/platform/frontend/static/'
 github:
   clientId: '47fca5d6cdbf13ae8984'
   clientSecret: 'c1f7002ed74ed439ebe8d8e238263e945d028f90'
