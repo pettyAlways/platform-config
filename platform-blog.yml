@@ -58,7 +58,7 @@ eureka:
     instance-id: platform-blog
     prefer-ip-address: true
     hostname: localhost
-    ip-address: www.thinkover.fun
+    ip-address: localhost
 
 info:
   app.name: 'platform-blog'
