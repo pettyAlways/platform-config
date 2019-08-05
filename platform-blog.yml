@@ -43,7 +43,7 @@ jwt:
 static:
   resource:
     uploadPath: '/home/platform/platform-blog/resources'
-    accessUrl: 'http://192.168.0.100:8086/platform/blog/static/'
+    accessUrl: 'http://47.98.215.5:8086/platform/blog/static/'
 
 logging:
   path: /usr/developer/backend/my_log
