@@ -54,7 +54,7 @@ static:
 github:
   clientId: '47fca5d6cdbf13ae8984'
   clientSecret: 'c1f7002ed74ed439ebe8d8e238263e945d028f90'
-  frontendUrl: 'http://47.98.215.5'
+  frontendUrl: 'http://www.thinkover.fun'
 logging:
   path:  /home/platform/platform-frontend/logs
   level:
