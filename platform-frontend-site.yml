@@ -56,9 +56,9 @@ github:
   clientSecret: 'c1f7002ed74ed439ebe8d8e238263e945d028f90'
   frontendUrl: 'http://47.98.215.5'
 logging:
-  path: /home/platform/platform-zuul/my_log
+  path:  /home/platform/platform-frontend/logs
   level:
-    root: INFO
+    root: ERROR
 
 eureka:
   client:
