@@ -49,6 +49,10 @@ logging:
   path: /home/web/platform-blog/logs
   level:
     root: INFO
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: ERROR
 
 eureka:
   client:

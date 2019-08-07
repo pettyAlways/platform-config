@@ -58,7 +58,11 @@ github:
 logging:
   path:  /home/platform/platform-frontend/logs
   level:
-    root: ERROR
+    root: INFO
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: ERROR
 
 eureka:
   client:
