@@ -48,7 +48,7 @@ static:
 logging:
   path: /home/web/platform-blog/logs
   level:
-    root: ERROR
+    root: INFO
 
 eureka:
   client:
