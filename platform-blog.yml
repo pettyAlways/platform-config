@@ -28,7 +28,7 @@ spring:
     # 参考https://www.cnblogs.com/pomer-huang/archive/2018/09/12/pomer.html
     # 在SpringBoot中的classpath指的是resources以及java等根目录 classpath:/resources 这种写法特别让人困惑
     # 他指的是resources目录下的resources
-    static-locations: classpath:/, classpath:/static/, file:/home/web/platform-blog/resources
+    static-locations: classpath:/, classpath:/static/, file:/home/platform/resources
   mvc:
     static-path-pattern: '/static/**'
 
@@ -42,11 +42,12 @@ jwt:
 
 static:
   resource:
-    uploadPath: '/home/web/platform-blog/resources'
+    # 使用docker部署下面文件的路径是存放在docker容器里面，当实例重新创建是图片资源丢失，所以需要一个docker做映射
+    uploadPath: '/home/platform/resources'
     accessUrl: 'http://47.98.215.5:8086/platform/blog/static/'
 
 logging:
-  path: /home/web/platform-blog/logs
+  path: /home/platform/logs
   level:
     root: INFO
     org:
