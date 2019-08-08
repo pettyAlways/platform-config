@@ -56,7 +56,7 @@ github:
   clientSecret: 'c1f7002ed74ed439ebe8d8e238263e945d028f90'
   frontendUrl: 'http://thinkover.fun'
 logging:
-  path:  /home/platform/logs
+  path:  /home/platform/platform-frontend/logs
   level:
     root: INFO
     org:
