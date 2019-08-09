@@ -6,9 +6,9 @@ spring:
   application:
     name: platform-developer
   datasource:
-    url: jdbc:mysql://118.25.74.179:3306/cms_web?useSSL=false
+    url: jdbc:mysql://rm-wz9hw0a1qwbj5vywfmo.mysql.rds.aliyuncs.com:3306/cms_web?useSSL=false
     username: root
-    password: 123456
+    password: ShangGuanls@123
     hikari:
       maximum-pool-size: 15
       minimum-idle: 5
@@ -27,12 +27,12 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://yingzuidou:yingzuidou@47.100.44.21:8084/eureka/, http://yingzuidou:yingzuidou@47.100.44.21:8085/eureka/
+      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8084/eureka/, http://yingzuidou:yingzuidou@118.25.74.179:8085/eureka/
   instance:
     instance-id: platform-developer
     prefer-ip-address: true
-    hostname: 118.25.74.179
-    ip-address: 118.25.74.179
+    hostname: localhost
+    ip-address: locahost
 
 skip:
   login:
