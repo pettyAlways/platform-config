@@ -27,12 +27,12 @@ logging:
 eureka:
   client:d
     serviceUrl:
-      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8084/eureka/, http://yingzuidou:yingzuidou@118.25.74.179:8085/eureka/
+      defaultZone: http://yingzuidou:yingzuidou@106.13.166.145:8084/eureka/, http://yingzuidou:yingzuidou@106.13.166.145:8085/eureka/
   instance:
     instance-id: platform-developer
     prefer-ip-address: true
-    hostname: localhost
-    ip-address: locahost
+    hostname: 106.13.166.145
+    ip-address: 106.13.166.145
 
 skip:
   login:
