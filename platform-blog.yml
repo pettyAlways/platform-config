@@ -49,11 +49,13 @@ static:
 logging:
   path: /home/platform/logs
   level:
-    root: INFO
+    root: ERROR
     org:
       springframework:
-        web: DEBUG
+        web: ERROR
       hibernate: ERROR
+      yingzuidou:
+        platform: ERROR
 
 eureka:
   client:
