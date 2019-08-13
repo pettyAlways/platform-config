@@ -58,12 +58,12 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8084/eureka/, http://yingzuidou:yingzuidou@118.25.74.179:8085/eureka/
+      defaultZone: http://yingzuidou:yingzuidou@106.13.166.145:8084/eureka/, http://yingzuidou:yingzuidou@106.13.166.145:8085/eureka/
   instance:
     instance-id: platform-blog
     prefer-ip-address: true
-    hostname: www.thinkover.fun
-    ip-address: www.thinkover.fun
+    hostname: 47.100.44.21
+    ip-address: 47.100.44.21
 
 info:
   app.name: 'platform-blog'

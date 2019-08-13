@@ -11,4 +11,4 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8085
+      defaultZone: http://yingzuidou:yingzuidou@106.13.166.145:8085

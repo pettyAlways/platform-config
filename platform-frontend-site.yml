@@ -67,12 +67,12 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8084/eureka/, http://yingzuidou:yingzuidou@118.25.74.179:8085/eureka/
+      defaultZone: http://yingzuidou:yingzuidou@106.13.166.145:8084/eureka/, http://yingzuidou:yingzuidou@106.13.166.145:8085/eureka/
   instance:
     instance-id: platform-frontend-site
     prefer-ip-address: true
-    hostname: 47.98.215.5
-    ip-address: 47.98.215.5
+    hostname: 106.13.166.145
+    ip-address: 106.13.166.145
 
 info:
   app.name: 'platform-frontend'

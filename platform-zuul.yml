@@ -6,12 +6,12 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://yingzuidou:yingzuidou@118.25.74.179:8084/eureka/, http://yingzuidou:yingzuidou@118.25.74.179:8085/eureka/
+      defaultZone: http://yingzuidou:yingzuidou@106.13.166.145:8084/eureka/, http://yingzuidou:yingzuidou@106.13.166.145:8085/eureka/
   instance:
     instance-id: platform-zuul
     prefer-ip-address: true
-    hostname: 47.98.215.5
-    ip-address: 47.98.215.5
+    hostname: 106.13.166.145
+    ip-address: 106.13.166.145
 zuul:
   # zuul转发请求会过滤默认的请求头，例如Authorization,这里使用sensitive-headers清空默认请求头
   sensitive-headers:
