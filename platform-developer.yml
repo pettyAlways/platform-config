@@ -37,8 +37,8 @@ eureka:
   instance:
     instance-id: platform-developer
     prefer-ip-address: true
-    hostname: 106.13.166.145
-    ip-address: 106.13.166.145
+    hostname: 106.13.167.135
+    ip-address: 106.13.167.135
 
 skip:
   login:
