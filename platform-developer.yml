@@ -20,9 +20,15 @@ spring:
   jpa:
     show-sql: true
 logging:
-  path: /usr/developer/backend/cms_web_log
+  path:  /home/platform/platform-backend-site/logs
   level:
-    root: INFO
+    root: ERROR
+    org:
+      springframework:
+        web: ERROR
+      hibernate: ERROR
+      yingzuidou:
+        platform: ERROR
 
 eureka:
   client:d
