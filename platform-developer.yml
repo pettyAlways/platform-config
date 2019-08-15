@@ -5,6 +5,20 @@ server:
 spring:
   application:
     name: platform-developer
+  datasource:
+    url: jdbc:mysql://rm-wz9hw0a1qwbj5vywfmo.mysql.rds.aliyuncs.com:3306/cms_web?useSSL=false
+    username: root
+    password: ShangGuanls@123
+    hikari:
+      maximum-pool-size: 15
+      minimum-idle: 5
+      idle-timeout: 30000
+      pool-name: DatebookHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  jpa:
+    show-sql: true
 logging:
   path:  /home/platform/platform-backend-site/logs
   level:
