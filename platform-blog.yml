@@ -11,9 +11,9 @@ spring:
   application:
     name: platform-blog
   datasource:
-    url: jdbc:mysql://rm-wz9hw0a1qwbj5vywfmo.mysql.rds.aliyuncs.com:3306/cms_web?useSSL=false
+    url: jdbc:mysql://rm-wz9hw0a1qwbj6vywfmo.mysql.rds.aliyuncs.com:3306/cms_web?useSSL=false
     username: root
-    password: ShangGuanls@123
+    password: 123456
     hikari:
       maximum-pool-size: 15
       minimum-idle: 5
