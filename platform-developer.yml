@@ -29,6 +29,9 @@ logging:
       hibernate: ERROR
       yingzuidou:
         platform: ERROR
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}
 eureka:
   client:
     serviceUrl:
