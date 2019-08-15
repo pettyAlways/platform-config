@@ -29,7 +29,10 @@ logging:
       hibernate: ERROR
       yingzuidou:
         platform: ERROR
-
+#jasypt加密的密匙
+jasypt:
+  encryptor:
+    password: SfcIkitucs86U3t2xXI50JMXoaxXTKJ89
 eureka:
   client:
     serviceUrl:
