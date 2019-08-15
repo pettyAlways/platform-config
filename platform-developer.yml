@@ -6,9 +6,9 @@ spring:
   application:
     name: platform-developer
   datasource:
-    url: jdbc:mysql://rm-wz9hw0a1qwbj5vywfmo.mysql.rds.aliyuncs.com:3306/cms_web?useSSL=false
-    username: root
-    password: ShangGuanls@123
+    url: ENC(J5qwWRUdfFDDrQHb08byXEW2zyvPmK3y81OztJ6pFFMNVs7ziYDOVWnnF2ve9vGWbYTlAy0E674+xWjNuEjpZnEwGNTJDm8J3KdQ0gH2YTU+U+oGPjTjRPlnd7qmnjAT)
+    username: ENC(NeVfH7knihIrJJoYcrRb2w==)
+    password: ENC(uA8SfeLnpuk+hObYAXYG2MYdN162PCst)
     hikari:
       maximum-pool-size: 15
       minimum-idle: 5
@@ -29,10 +29,6 @@ logging:
       hibernate: ERROR
       yingzuidou:
         platform: ERROR
-#jasypt加密的密匙
-jasypt:
-  encryptor:
-    password: SfcIkitucs86U3t2xXI50JMXoaxXTKJ89
 eureka:
   client:
     serviceUrl:
