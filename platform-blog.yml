@@ -44,7 +44,7 @@ static:
   resource:
     # 使用docker部署下面文件的路径是存放在docker容器里面，当实例重新创建是图片资源丢失，所以需要一个docker做映射
     uploadPath: '/home/platform/resources'
-    accessUrl: 'http://47.98.215.5:8086/platform/blog/static/'
+    accessUrl: 'http://106.13.166.145:8086/platform/blog/static/'
 
 logging:
   path: /home/platform/logs
