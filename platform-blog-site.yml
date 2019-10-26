@@ -11,8 +11,9 @@ spring:
   application:
     name: platform-blog-site
   datasource:
-      username: ENC(NeVfH7knihIrJJoYcrRb2w==)
-      password: ENC(uA8SfeLnpuk+hObYAXYG2MYdN162PCst)
+    url: ENC(J5qwWRUdfFDDrQHb08byXEW2zyvPmK3y81OztJ6pFFMNVs7ziYDOVWnnF2ve9vGWbYTlAy0E674+xWjNuEjpZnEwGNTJDm8J3KdQ0gH2YTU+U+oGPjTjRPlnd7qmnjAT)
+    username: ENC(NeVfH7knihIrJJoYcrRb2w==)
+    password: ENC(uA8SfeLnpuk+hObYAXYG2MYdN162PCst)
     hikari:
       maximum-pool-size: 15
       minimum-idle: 5
