@@ -9,7 +9,7 @@ spring:
     time-zone:
       GMT+8
   application:
-    name: platform-blog
+    name: platform-blog-site
   datasource:
       url: ENC(J5qwWRUdfFDDrQHb08byXEW2zyvPmK3y81OztJ6pFFMNVs7ziYDOVWnnF2ve9vGWbYTlAy0E674+xWjNuEjpZnEwGNTJDm8J3KdQ0gH2YTU+U+oGPjTjRPlnd7qmnjAT)
       username: ENC(NeVfH7knihIrJJoYcrRb2w==)
